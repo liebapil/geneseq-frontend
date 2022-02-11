@@ -68,6 +68,7 @@ export default function Mutation(props) {
               setMutation(e.target.value)
             }}
           />
+          <p className='explanation'></p>
           <label htmlFor='polar'>Hydrophobic and Hydrophilic? </label>
           <input
             className='form_polar'
@@ -79,6 +80,7 @@ export default function Mutation(props) {
             }}
             
           />
+          <p className='explanation'></p>
           <label htmlFor='protonate'>Protonate? </label>
           <input
             className='form_protonate'
@@ -89,6 +91,7 @@ export default function Mutation(props) {
               setProtonates(e.target.value)
             }}
           />
+          <p className='explanation'></p>
           <input className="submit-mutation" type="submit" />
         </form>
       </div>
