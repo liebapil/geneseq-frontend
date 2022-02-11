@@ -16,7 +16,7 @@ body,
 #root,
 .App{
   background-color: #74c8e1;
-  background: url('/Users/liebapil/ga_seir/unit4/project/project_p/GeneSeq/client/src/image/dna4.jpeg') no-repeat center center fixed;
+  background: url('./image/dna4.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
