@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@media only screen and (max-width: 800px) {
+  .App {
+background-color: black;
+  }
+}
+
+.App {
+  text-align: center;
+  background-color: #74c8e1; 
+}
+
+html,
+body,
+#root,
+.App{
+  background-color: #74c8e1;
+  background: url('/Users/liebapil/ga_seir/unit4/project/project_p/GeneSeq/client/src/image/dna4.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: fit-content;
+  margin: 20px;
+}
+
+.seq_page{
+  display: flex;
+  flex-direction: column;
+  
+  }
+.seq_link{
+  text-decoration: none;
+  color: #072e3a;
+
+}
+.post_gene {
+  display: flex;
+  flex-direction: column;
+}
+.seq_gene{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #D4F1F4;
+    
+}
+.seq_seq{
+  height: 100px;
+  margin: 20px;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #D4F1F4;
+  text-align: center;
+}
+
+label{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+
+.submit-edit{
+  width: 100px;
+}
+
+.submit_seq{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    border-radius: 10em;
+    font-family: 'Patrick Hand', cursive;
+    border: none;
+    background-color: #74c8e1;
+}
+.submit_seq:hover{
+  background-color: #9cd8df;
+}
+
+.seq_render{
+  border-style: groove;
+  border-radius: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 10px;
+  max-width:min-content;
+  max-height: min-content;
+}
+
+.seq_text{
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.delete_button,
+.edit_button{
+  height: 2em;
+  width: 5em;
+  margin: 0.2em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #74c8e1;
+}
+.delete_button:hover{
+  background-color: #a3e4ec;
+}
+.edit_button:hover{
+  background-color: #a3e4ec;
+}
+
+.form{
+  /* margin:1em;
+  padding: 0.2em; */
+  display: flex;
+  flex-direction: column;
+}
+.seq_input{
+  margin-right: 0.6em;
+  margin-left: 0.2em;
+  background-color: #D4F1F4;
+  border-radius: 0.5em;
+}
+.submit-edit{
+  width: 10em;
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: 2em;
+  border-color: #58a8c0;
+  background-color: #9cd8df;
+}
+
+.submit-edit:hover{
+  background-color: #42a1ac;
+}
+
+/* mutation page */
+
+.mutation_seq{
+  letter-spacing: 0.5em;
+}
+
+.mutation_form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form_mutation,
+.form_polar,
+.form_protonate{
+  height: 5em;
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  border-radius: 2em;
+  border-color: #9cd8df;
+  background-color: #b1e6ec;
+}
+
+.submit-mutation{
+  width: 10em;
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: 2em;
+  border-color: #58a8c0;
+  background-color: #9cd8df;
+}
+
+.submit-mutation:hover{
+  background-color: #42a1ac;
+}
+
+.the_mutations{
+  border-style: groove;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: 00.5em;
+}
+
+.registers,
+.login{
+  display: flex;
+  flex-direction: column;
+}
+
+.username,
+.password{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  height: 3em;
+  text-align: center;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #D4F1F4;
+  margin-bottom: 2em;
+}
+
+.login_button{
+  width: 10em;
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-radius: 2em;
+  border-color: #58a8c0;
+  background-color: #9cd8df;
+}
+
+.login_button:hover{
+  background-color: #42a1ac;
+}
