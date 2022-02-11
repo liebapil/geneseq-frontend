@@ -14,9 +14,9 @@ export default function SeqRender(props) {
   const [update, setUpdate] = useState(false)
   const [showForm, toggleShowForm] = useState(false)
   const [deleteSeq, setDeleteSeq] = useState('')
-  const [geneName, setGeneName] = useState('')
-  const [sequencesOne, setSequencesOne] = useState('')
-  const [sequencesTwo, setSequencesTwo] = useState('')
+  const [geneName, setGeneName] = useState(props.gene_name)
+  const [sequencesOne, setSequencesOne] = useState(props.sequence_one)
+  const [sequencesTwo, setSequencesTwo] = useState(props.sequence_two)
 
 
 
@@ -67,7 +67,7 @@ export default function SeqRender(props) {
               onChange={(e) => {
                 setGeneName(e.target.value)
               }}
-              value={props.gene_name}
+              value={geneName}
             />
             <label htmlFor='sequenceOne'>Sequence one: </label>
             <input
@@ -78,7 +78,7 @@ export default function SeqRender(props) {
               onChange={(e) => {
                 setSequencesOne(e.target.value)
               }}
-              value={props.sequence_one}
+              value={sequencesOne}
             />
             <label htmlFor='sequenceTwo'>Sequence two: </label>
             <input
@@ -89,7 +89,7 @@ export default function SeqRender(props) {
               onChange={(e) => {
                 setSequencesTwo(e.target.value)
               }}
-              value={props.sequence_two}
+              value={sequencesTwo}
             />
             <input className="submit-edit" type="submit" />
           </form>
