@@ -25,7 +25,7 @@ export default function SeqRender(props) {
   const handleupdate = async (e) => {
     e.preventDefault()
     setUpdate(true)
-    await axios.put(`https://geneseq.herokuapp.com/${props.id}`, {
+    await axios.put(`https://geneseq.herokuapp.com/gene/${props.id}`, {
       gene_name: geneName,
       sequence_one: sequencesOne,
       sequence_two: sequencesTwo
@@ -35,7 +35,7 @@ export default function SeqRender(props) {
   }
   const handleDelete = async (e) => {
     e.preventDefault()
-    await axios.delete(`https://geneseq.herokuapp.com/${props.id}`)
+    await axios.delete(`https://geneseq.herokuapp.com/gene/${props.id}`)
     setDeleteSeq()
     props.renderSeq()
   }
