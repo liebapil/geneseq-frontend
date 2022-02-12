@@ -1,7 +1,10 @@
+import { isValidInputTimeValue } from '@testing-library/user-event/dist/utils';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom"
 import MutationRender from './MutationRender';
+import amino from '../image/aminoacids.png'
+
 
 export default function Mutation(props) {
   //get seq
@@ -95,6 +98,7 @@ export default function Mutation(props) {
           <input className="submit-mutation" type="submit" />
         </form>
       </div>
+        <img src={amino} alt="amino acids" className='image_mut' />
       <div className='mutation_render'>
         {getmutation.map((props, idx) => {
           if (props.gene_id === parseInt(id)) {

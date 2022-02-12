@@ -233,3 +233,7 @@ label{
 .login_button:hover{
   background-color: #42a1ac;
 }
+
+.image_mut{
+  height: 25em;
+}
