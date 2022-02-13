@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom"
 import MutationRender from './MutationRender';
 import amino from '../image/aminoacids.png'
+import { Link } from 'react-router-dom'
+
 
 
 export default function Mutation(props) {
@@ -56,9 +58,12 @@ export default function Mutation(props) {
 
   return (
     <div className='mutation_page'>
-      <p className='mutation_gene'>Gene name: {gene.gene_name}</p>
-      <p className='mutation_seq'>Sequence one: {gene.sequence_one} </p>
-      <p className='mutation_seq'>Sequence Two: {gene.sequence_two}</p>
+      <h3>Gene name: </h3>
+      <p className='mutation_gene'>{gene.gene_name}</p>
+      <h3>Sequence one:</h3>
+      <p className='mutation_seq'> {gene.sequence_one} </p>
+      <h3>Sequence Two:</h3>
+      <p className='mutation_seq'> {gene.sequence_two}</p>
       <div>
         <form className='mutation_form' onSubmit={postMutation}>
           <label htmlFor='mutation'>Mutation? </label>
@@ -122,5 +127,6 @@ export default function Mutation(props) {
           }
         })}
       </div>
+      <Link className='link_gene' to ={'/gene/'}>Gene home page</Link>
     </div>)
 }

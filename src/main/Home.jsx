@@ -7,11 +7,6 @@ import '../App.css'
 
 
 export default function Home() {
-    // const [isLoggedIn, setisLoggedIn] = useState(false)
-    
-
-    
-
     
   return(
    <div className='home_page'>

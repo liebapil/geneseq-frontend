@@ -95,10 +95,14 @@ label{
   max-height: min-content;
 }
 
-.seq_text{
+.seq_text,
+.seq_name{
   display: flex;
   flex-direction: column;
   margin: 1em;
+}
+.seq_text{
+  text-align: justify;
 }
 
 .delete_button,
@@ -149,6 +153,7 @@ label{
 
 .mutation_seq{
   letter-spacing: 0.5em;
+  text-align: justify;
 }
 
 .mutation_form{
@@ -236,11 +241,22 @@ label{
 
 .image_mut{
   height: 25em;
+  margin-bottom: 2em;
 }
-.explation_link{
+.explation_link,
+.link_gene{
   text-decoration: none;
   color: #105a61;
 }
 .explanation{
   text-align: justify;
+}
+.link_gene{
+  border-style: groove;
+  border-radius: 1em;
+  padding: 0.5em;
+  background-color: #74c8e1;
+}
+.link_gene:hover{
+  background-color: #87b4c2;
 }
