@@ -237,3 +237,10 @@ label{
 .image_mut{
   height: 25em;
 }
+.explation_link{
+  text-decoration: none;
+  color: #105a61;
+}
+.explanation{
+  text-align: justify;
+}
