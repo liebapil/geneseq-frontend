@@ -38,6 +38,10 @@ export default function Sequence() {
 
   return (
     <div className='seq_page'>
+      <h4>Instructions</h4>
+      <p>In the link below you can find the sequences you want to compare: </p>
+      <a href='https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/'>NCBI Virus</a>
+      <p>Below enter in the name of the virus and the two sequences:</p>
       <form className='post_gene' onSubmit={postGene}>
         <label htmlFor='gene_name'>Gene Name</label>
         <input
