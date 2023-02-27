@@ -76,6 +76,7 @@ export default function User(props) {
                         setUserNameReg(e.target.value)
                     }}
                 />
+                 <label htmlFor='password'>password: </label>
                 <label htmlFor='password'>password: </label>
                 <input
                     className='password'
