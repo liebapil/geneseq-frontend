@@ -23,6 +23,8 @@ export default function Mutation(props) {
   const [submit, setSubmit] = useState(false);
   const [getmutation, setGetMutation] = useState([])
 
+  // State for comparison result
+  const [comparisonResult, setComparisonResult] = useState('');
 
   const getGene = async (e) => {
     ///gene
